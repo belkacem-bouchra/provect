@@ -1,0 +1,499 @@
+/* Extra Small devices (portrait phones) - less than 480px */
+
+@media (max-width:480px) {
+    .container {
+        width: 80%;
+    }
+
+    .nav-list {
+        width: 100%;
+        transform: translate(0, -100%);
+    }
+
+    #toggle:checked~.nav-links .nav-list {
+        transform: translate(0, 0);
+    }
+
+    .landing-content .follow {
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .landing-content .follow p {
+        writing-mode: horizontal-tb;
+    }
+
+    .follow-text {
+        position: relative;
+    }
+
+    .follow-text hr {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2px !important;
+        width: 80% !important;
+    }
+
+    .follow-text hr:first-of-type {
+        display: block !important;
+        left: -100%;
+    }
+
+    .follow-text hr:last-of-type {
+        right: -100%;
+    }
+
+    .follow .social {
+        flex-direction: row;
+    }
+
+    .landing-content .text {
+        gap: 10px;
+    }
+
+    .landing-content .text h1 {
+        font-size: 30px;
+    }
+
+    .text p,
+    #cursor {
+        font-size: 14px;
+    }
+
+    .landing-content .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .landing-content .buttons button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .landing-content .buttons button a {
+        font-size: 14px;
+    }
+
+    .nav-list .logo {
+        padding-inline: 20px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .about-text ul:last-of-type {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .school .container {
+        row-gap: 60px;
+    }
+
+    .school .container::after {
+        z-index: -1;
+    }
+
+    .degree:after {
+        top: -30px;
+    }
+
+    .degree-content {
+        width: 100%;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+
+    .services img {
+        height: 35px;
+    }
+
+    .skills .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skill-content {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px 10%;
+    }
+
+    .skill {
+        flex-basis: 100%;
+    }
+
+    .skills .common-border {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .portfolio-content {
+        flex-direction: column;
+    }
+
+    .container .portfolio-item {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .portfolio-item,
+    .item-expand {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .form {
+        width: 100%;
+        min-height: fit-content;
+        padding: 30px;
+    }
+
+    /* ---------- */
+
+    .lightbox-container {
+        justify-content: center;
+    }
+
+    .lightbox-content {
+        height: 50vh;
+    }
+
+    .list-images img:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Small devices (landscape phones) - 481px and up */
+
+@media (min-width:481px) {
+    .nav-list {
+        transform: translate(0, -100%);
+    }
+
+    #toggle:checked~.nav-links .nav-list {
+        transform: translate(0, 0);
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .about-text ul:last-of-type {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .school .container {
+        row-gap: 60px;
+    }
+
+    .school .container::after {
+        z-index: -1;
+    }
+
+    .degree:after {
+        top: -30px;
+    }
+
+    .degree-content {
+        width: 100%;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+
+    .services .container {
+        row-gap: 30px;
+    }
+
+    .services img {
+        height: 35px;
+    }
+
+    .skills .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lightbox-content {
+        height: 50vh;
+    }
+
+    .skill-content {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px 10%;
+    }
+
+    .skill {
+        flex-basis: 100%;
+    }
+
+    .skills .common-border {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .portfolio-content {
+        flex-direction: column;
+    }
+
+    .container .portfolio-item {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .portfolio-item,
+    .item-expand {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .form {
+        width: 100%;
+        min-height: fit-content;
+        padding: 30px;
+    }
+
+    .lightbox-container {
+        justify-content: center;
+    }
+
+    .list-images img:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+}
+
+/* Medium devices (tablets) - 768px and up*/
+
+@media (min-width:768px) {
+    .nav-list {
+        transform: translate(-100%, 0);
+    }
+
+    .lightbox-content {
+        height: 90vh;
+    }
+
+    #toggle:checked~.nav-links .nav-list {
+        transform: translate(0, 0);
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .nav-list {
+        width: 35%;
+    }
+
+    .about-text ul:last-of-type {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .school .container::after {
+        z-index: 1;
+    }
+
+    .degree:after {
+        top: 20px;
+    }
+
+    .degree-content {
+        width: 45%;
+    }
+
+    .services img {
+        height: 40px;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .services .container {
+        row-gap: 40px;
+    }
+
+    .skills .container {
+        gap: 50px;
+    }
+
+    .skill {
+        flex-basis: 45%;
+    }
+
+    .portfolio-nav button {
+        width: auto;
+    }
+
+    .portfolio-content {
+        flex-direction: row;
+        column-gap: 10%;
+    }
+
+    .portfolio-item,
+    .item-expand {
+        width: 45%;
+        height: 300px;
+        padding: 0;
+    }
+
+    .contact .container {
+        flex-direction: row;
+    }
+
+    .contact-info {
+        width: 35%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .contact-info,
+    .form {
+        min-height: 600px;
+        padding: 0 30px;
+    }
+}
+
+/* Large devices (desktop) - 992px and up */
+
+@media (min-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-list {
+        width: 25%;
+    }
+
+    .about .container {
+        flex-direction: row;
+    }
+
+    .about-text {
+        width: 55%;
+        order: -1;
+    }
+
+    .about-img {
+        width: 40%;
+    }
+
+    .school .container {
+        row-gap: 40px;
+    }
+
+    .services img {
+        height: 50px;
+    }
+
+    .services .container {
+        row-gap: 40px;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .skills .container {
+        flex-direction: row;
+        gap: 120px;
+    }
+
+    .skills .container::before,
+    .skills .container::after {
+        bottom: 0;
+        width: 1px;
+        height: calc(100% - 60px);
+    }
+
+    .skills .container::before {
+        right: calc(50% - 1px);
+    }
+
+    .skills .container::after {
+        right: calc(50%);
+    }
+
+    .skill-content {
+        flex-direction: column;
+    }
+
+    .skill {
+        flex-basis: 100%;
+    }
+
+    .skills .common-border {
+        display: none;
+    }
+
+    .portfolio-content {
+        column-gap: 5%;
+    }
+
+    .portfolio-item,
+    .item-expand {
+        width: 30%;
+        height: 300px;
+    }
+
+    .lightbox-container {
+        justify-content: space-between;
+    }
+
+    .list-images img:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Large devices (large desktop) - 1200px and up */
+
+@media (min-width:1200px) {
+    .services .container {
+        row-gap: 60px;
+    }
+
+    .service {
+        width: 30%;
+    }
+}
